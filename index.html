@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jazblue Automotive — a central hub for four independent automotive projects covering hypercars, Grand Tour cars, UK used cars and car diagnostics.">
+<title>Jazblue Automotive | Cars, Performance & Diagnostics</title>
+<style>
+:root{--bg:#080a0d;--panel:#11151b;--panel2:#171c23;--text:#f3f5f7;--muted:#9ca6b2;--line:#252c35;--accent:#e7b45c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 20% 0%,#18202b 0,#080a0d 38%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.brand span{color:var(--accent)}
+nav a{margin-left:22px;color:var(--muted);font-size:.92rem}
+.hero{padding:92px 0 72px;text-align:center}
+.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800}
+.hero h1{font-size:clamp(3rem,8vw,6.6rem);line-height:.92;margin:18px 0;letter-spacing:-.06em}
+.hero h1 span{color:var(--accent)}
+.hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.12rem}
+.cta{display:inline-block;margin-top:30px;padding:13px 22px;border:1px solid #4a535e;border-radius:999px;background:#151a20;font-weight:700}
+.section{padding:42px 0 90px}
+.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}
+.section h2{font-size:2rem;margin:0}
+.section-head p{margin:0;color:var(--muted);max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:28px;min-height:285px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s transform,.25s border-color}
+.card:hover{transform:translateY(-4px);border-color:#48515d}
+.number{color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.16em}
+.card h3{font-size:1.65rem;margin:12px 0 8px}
+.card p{color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.tag{font-size:.76rem;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#c6ced7}
+.link{font-weight:800;color:var(--accent)}
+.about{border-top:1px solid var(--line);padding:70px 0}
+.about p{color:var(--muted);max-width:760px}
+.footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.hero{padding-top:55px}.footer{display:block}.footer div+div{margin-top:10px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+<a class="brand" href="#top">Jazblue <span>Automotive</span></a>
+<nav><a href="#projects">Projects</a><a href="#about">About</a></nav>
+</header>
+
+<main id="top">
+<section class="hero wrap">
+<div class="eyebrow">Cars • Performance • Technology</div>
+<h1>One garage.<br><span>Four projects.</span></h1>
+<p>A central home for four independent automotive projects — from £1m hypercars and Grand Tour machines to practical UK cars and hands-on diagnostics.</p>
+<a class="cta" href="#projects">Explore the collection ↓</a>
+</section>
+
+<section class="section wrap" id="projects">
+<div class="section-head">
+<div><div class="eyebrow">The collection</div><h2>Explore the projects</h2></div>
+<p>Each project remains its own site. This hub simply brings them together in one place.</p>
+</div>
+
+<div class="grid">
+<article class="card">
+<div>
+<div class="number">01 / PERFORMANCE</div>
+<h3>Hypercars Under £1M</h3>
+<p>Explore hypercar specifications, performance data and visualisations in a dedicated project.</p>
+<div class="tags"><span class="tag">Hypercars</span><span class="tag">Specs</span><span class="tag">Performance</span></div>
+</div>
+<a class="link" href="https://github.com/Jazblue/hypercars-1m" target="_blank" rel="noopener">View project →</a>
+</article>
+
+<article class="card">
+<div>
+<div class="number">02 / SHOWCASE</div>
+<h3>The Grand Tour — Episode 1</h3>
+<p>A cinematic automotive showcase built around the cars featured in the project.</p>
+<div class="tags"><span class="tag">Cars</span><span class="tag">Showcase</span><span class="tag">Performance</span></div>
+</div>
+<a class="link" href="https://github.com/Jazblue/grand-tour-episode-1-cars" target="_blank" rel="noopener">View project →</a>
+</article>
+
+<article class="card">
+<div>
+<div class="number">03 / UK BUYING</div>
+<h3>UK Cars Under £10k</h3>
+<p>A practical used-car project focused on cars available in the UK and the information buyers need.</p>
+<div class="tags"><span class="tag">Used Cars</span><span class="tag">UK</span><span class="tag">Buying Guide</span></div>
+</div>
+<a class="link" href="https://github.com/Jazblue/uk-cars-10k" target="_blank" rel="noopener">View project →</a>
+</article>
+
+<article class="card">
+<div>
+<div class="number">04 / DIAGNOSTICS</div>
+<h3>Car Diagnostics Assistant</h3>
+<p>A diagnostics-focused project covering OBD2 fault codes and vehicle troubleshooting.</p>
+<div class="tags"><span class="tag">OBD2</span><span class="tag">Diagnostics</span><span class="tag">Python</span></div>
+</div>
+<a class="link" href="https://github.com/Jazblue/car-diagnostics" target="_blank" rel="noopener">View project →</a>
+</article>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap">
+<div class="eyebrow">About</div>
+<h2>One destination. Four independent projects.</h2>
+<p>Jazblue Automotive brings four separate automotive projects together in a simple, focused hub. The original repositories remain independent, so each project can continue to evolve without affecting the others.</p>
+</div>
+</section>
+</main>
+
+<footer class="wrap footer">
+<div>© 2026 Jazblue Automotive</div>
+<div><a href="https://github.com/Jazblue" target="_blank" rel="noopener">GitHub</a></div>
+</footer>
+</body>
+</html>
