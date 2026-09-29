@@ -1,121 +1,325 @@
-﻿<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en" class="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Jazblue Automotive — a central hub for four independent automotive projects covering hypercars, Grand Tour cars, UK used cars and car diagnostics.">
-<title>Jazblue Automotive | Cars, Performance & Diagnostics</title>
-<style>
-:root{--bg:#080a0d;--panel:#11151b;--panel2:#171c23;--text:#f3f5f7;--muted:#9ca6b2;--line:#252c35;--accent:#e7b45c}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 20% 0%,#18202b 0,#080a0d 38%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1120px,92%);margin:auto}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
-.brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.brand span{color:var(--accent)}
-nav a{margin-left:22px;color:var(--muted);font-size:.92rem}
-.hero{padding:92px 0 72px;text-align:center}
-.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800}
-.hero h1{font-size:clamp(3rem,8vw,6.6rem);line-height:.92;margin:18px 0;letter-spacing:-.06em}
-.hero h1 span{color:var(--accent)}
-.hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.12rem}
-.cta{display:inline-block;margin-top:30px;padding:13px 22px;border:1px solid #4a535e;border-radius:999px;background:#151a20;font-weight:700}
-.section{padding:42px 0 90px}
-.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}
-.section h2{font-size:2rem;margin:0}
-.section-head p{margin:0;color:var(--muted);max-width:600px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:22px;padding:28px;min-height:285px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s transform,.25s border-color}
-.card:hover{transform:translateY(-4px);border-color:#48515d}
-.number{color:var(--accent);font-size:.75rem;font-weight:800;letter-spacing:.16em}
-.card h3{font-size:1.65rem;margin:12px 0 8px}
-.card p{color:var(--muted)}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
-.tag{font-size:.76rem;padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#c6ced7}
-.link{font-weight:800;color:var(--accent)}
-.about{border-top:1px solid var(--line);padding:70px 0}
-.about p{color:var(--muted);max-width:760px}
-.footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.hero{padding-top:55px}.footer{display:block}.footer div+div{margin-top:10px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Local AI Agents 2026 | Technical Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#090d16',
+                        cardBg: '#111827',
+                        borderCol: '#1f2937',
+                        accentBlue: '#3b82f6',
+                        accentCyan: '#06b6d4',
+                        accentPurple: '#8b5cf6'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        code, pre { font-family: 'Fira Code', monospace; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #090d16; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #374151; }
+    </style>
 </head>
-<body>
-<header class="wrap nav">
-<a class="brand" href="#top">Jazblue <span>Automotive</span></a>
-<nav><a href="#projects">Projects</a><a href="#about">About</a></nav>
-</header>
+<body class="bg-darkBg text-slate-100 min-h-screen antialiased selection:bg-blue-500 selection:text-white">
 
-<main id="top">
-<section class="hero wrap">
-<div class="eyebrow">Cars • Performance • Technology</div>
-<h1>One garage.<br><span>Four projects.</span></h1>
-<p>A central home for four independent automotive projects — from £1m hypercars and Grand Tour machines to practical UK cars and hands-on diagnostics.</p>
-<a class="cta" href="#projects">Explore the collection ↓</a>
-</section>
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#090d16]/80 border-b border-borderCol">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/30">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-blue-400 bg-clip-text text-transparent">Windows Local AI Agents 2026</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-400">
+                <a href="#executive-summary" class="hover:text-blue-400 transition-colors">Summary</a>
+                <a href="#developments" class="hover:text-blue-400 transition-colors">Developments</a>
+                <a href="#architecture" class="hover:text-blue-400 transition-colors">Architecture</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#capabilities" class="hover:text-blue-400 transition-colors">Capabilities</a>
+                <a href="#getting-started" class="hover:text-blue-400 transition-colors">Quick Start</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="https://github.com/Jazblue/windows-local-ai-agents-2026" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-600/20 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    <span>GitHub Repo</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-<section class="section wrap" id="projects">
-<div class="section-head">
-<div><div class="eyebrow">The collection</div><h2>Explore the projects</h2></div>
-<p>Each project remains its own site. This hub simply brings them together in one place.</p>
-</div>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+        <div class="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl mb-8">
+                <img src="assets/pic1localagents.jfif" alt="Windows Local AI Agents 2026 Cover Art" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Windows Local AI Agents 2026</h1>
+                    <p class="text-slate-300 text-sm md:text-base">State of the Art Technical Report • Industry Analysis</p>
+                </div>
+            </div>
 
-<div class="grid">
-<article class="card">
-<div>
-<div class="number">01 / PERFORMANCE</div>
-<h3>Hypercars Under £1M</h3>
-<p>Explore hypercar specifications, performance data and visualisations in a dedicated project.</p>
-<div class="tags"><span class="tag">Hypercars</span><span class="tag">Specs</span><span class="tag">Performance</span></div>
-</div>
-<a class="link" href="https://github.com/Jazblue/hypercars-1m" target="_blank" rel="noopener">View project →</a>
-</article>
+        <section id="executive-summary" class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div class="lg:col-span-2 space-y-6 bg-cardBg/60 backdrop-blur-md p-8 rounded-3xl border border-borderCol shadow-xl">
+                <div class="flex items-center space-x-3 text-blue-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h2 class="text-2xl font-bold text-white">Executive Summary</h2>
+                </div>
+                <p class="text-slate-300 leading-relaxed">
+                    The local AI agent ecosystem on Windows has matured significantly in 2026, moving from experimental prototypes to production-ready tools. <strong>Hermes Agent</strong> and <strong>OpenClaw</strong> represent the two dominant frameworks, each with distinct approaches to local-first AI. Hermes focuses on developer productivity with its skills system and persistent memory, while OpenClaw emphasizes personal automation through native desktop integration.
+                </p>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Key trends include native Windows support (no longer requiring WSL), robust skills/plugins ecosystems, and growing integration with MCP (Model Context Protocol). Hardware requirements have stabilized with 24GB+ VRAM as the mainstream baseline, though reliability and setup barriers remain critical adoption challenges.
+                </p>
+            </div>
+            
+            <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol space-y-4 shadow-xl">
+                <h3 class="text-sm font-semibold text-slate-400 tracking-wider uppercase">Key Highlights</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                        <span class="text-slate-300"><strong>Hermes Agent:</strong> 180K+ GitHub stars, 200+ built-in skills by September 2026.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                        <span class="text-slate-300"><strong>OpenClaw Desktop:</strong> Execution container security & 2-hour daily productivity gains.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                        <span class="text-slate-300"><strong>LLM-Manager:</strong> Unified control panel for 50+ local models with auto-sizing.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                        <span class="text-slate-300"><strong>Skills Marketplace:</strong> 400+ pre-packaged agent skills with one-click installer.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<article class="card">
-<div>
-<div class="number">02 / SHOWCASE</div>
-<h3>The Grand Tour — Episode 1</h3>
-<p>A cinematic automotive showcase built around the cars featured in the project.</p>
-<div class="tags"><span class="tag">Cars</span><span class="tag">Showcase</span><span class="tag">Performance</span></div>
-</div>
-<a class="link" href="https://github.com/Jazblue/grand-tour-episode-1-cars" target="_blank" rel="noopener">View project →</a>
-</article>
+        <section id="developments" class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Major Developments</h2>
+                <p class="text-slate-400 text-sm">Milestones shaping Windows local AI in 2026</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol hover:border-blue-500/50 transition-all space-y-4">
+                    <div class="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-lg">01</div>
+                    <h3 class="text-lg font-semibold text-white">Native Windows Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Hermes Agent v0.21.5 eliminated WSL2 dependency, shipping pure Windows binaries. OpenClaw released native `.exe` installers with scheduled task persistence, and LM Studio removed virtualization bottlenecks.
+                    </p>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol hover:border-blue-500/50 transition-all space-y-4">
+                    <div class="w-10 h-10 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-lg">02</div>
+                    <h3 class="text-lg font-semibold text-white">Skills Ecosystem Explosion</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Shokunin's "職人" project brought 62 development skills, Microsoft Skills Hub delivered Azure/M365 integration, and Agent Skills Manager introduced 400+ one-click pre-packaged modular skills.
+                    </p>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol hover:border-blue-500/50 transition-all space-y-4">
+                    <div class="w-10 h-10 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-lg">03</div>
+                    <h3 class="text-lg font-semibold text-white">MCP Standardization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Model Context Protocol (MCP) became the de facto tool standard. Hermes supports 50+ MCP servers out-of-the-box, and Windows Hub exposes native OS capabilities securely.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<article class="card">
-<div>
-<div class="number">03 / UK BUYING</div>
-<h3>UK Cars Under £10k</h3>
-<p>A practical used-car project focused on cars available in the UK and the information buyers need.</p>
-<div class="tags"><span class="tag">Used Cars</span><span class="tag">UK</span><span class="tag">Buying Guide</span></div>
-</div>
-<a class="link" href="https://github.com/Jazblue/uk-cars-10k" target="_blank" rel="noopener">View project →</a>
-</article>
+        <section id="architecture" class="space-y-6">
+            <div class="border-l-4 border-cyan-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Ecosystem Architecture</h2>
+                <p class="text-slate-400 text-sm">Framework distribution and MCP protocol communication flow</p>
+            </div>
+            <div class="bg-slate-950 p-6 sm:p-8 rounded-3xl border border-borderCol shadow-2xl overflow-x-auto">
+                <img src="assets/localagen2.jfif" alt="Windows Local AI Agents 2026 Ecosystem Architecture Diagram" class="w-full h-auto rounded-xl">
+                <p class="text-center text-slate-400 text-sm mt-4">* Windows Local AI Agents 2026 - Ecosystem Architecture Overview</p>
+            </div>
+        </section>
 
-<article class="card">
-<div>
-<div class="number">04 / DIAGNOSTICS</div>
-<h3>Car Diagnostics Assistant</h3>
-<p>A diagnostics-focused project covering OBD2 fault codes and vehicle troubleshooting.</p>
-<div class="tags"><span class="tag">OBD2</span><span class="tag">Diagnostics</span><span class="tag">Python</span></div>
-</div>
-<a class="link" href="https://github.com/Jazblue/car-diagnostics" target="_blank" rel="noopener">View project →</a>
-</article>
-</div>
-</section>
+        <section id="projects" class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Interesting Projects</h2>
+                <p class="text-slate-400 text-sm">Key frameworks driving local intelligence</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-500/20 text-blue-400">Hermes Agent</span>
+                        <span class="text-xs text-slate-400">180K+ Stars</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Developer-focused agent with 3-layer persistent memory, cross-platform CLI/messaging integrations, and continuous GEPA self-improvement loops.
+                    </p>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-500/20 text-purple-400">OpenClaw Desktop</span>
+                        <span class="text-xs text-slate-400">Secure Container</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Personal automation assistant running inside Microsoft Execution Containers with scheduled background task persistence and deep Windows integration.
+                    </p>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur-md p-6 rounded-3xl border border-borderCol space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full bg-cyan-500/20 text-cyan-400">LLM-Manager</span>
+                        <span class="text-xs text-slate-400">Execur539</span>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Zero-telemetry unified control panel for Windows users that automatically detects hardware specs, sizes local models, and runs them as agent tools.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<section class="about" id="about">
-<div class="wrap">
-<div class="eyebrow">About</div>
-<h2>One destination. Four independent projects.</h2>
-<p>Jazblue Automotive brings four separate automotive projects together in a simple, focused hub. The original repositories remain independent, so each project can continue to evolve without affecting the others.</p>
-</div>
-</section>
-</main>
+        <section id="capabilities" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-cardBg/60 backdrop-blur-md p-8 rounded-3xl border border-borderCol space-y-6">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h2 class="text-xl font-bold text-white">What Agents Can Actually Do</h2>
+                </div>
+                <ul class="space-y-4 text-sm text-slate-300">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-blue-400 font-bold">•</span>
+                        <div><strong>Desktop Automation:</strong> Intelligent file management, backup, system maintenance, application control, and scheduled background workflows.</div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-blue-400 font-bold">•</span>
+                        <div><strong>Browser & Web Control:</strong> Web navigation, form filling, content scraping, CAPTCHA handling, and market research assistance.</div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-blue-400 font-bold">•</span>
+                        <div><strong>Development Productivity:</strong> Code generation, automated test writing, code reviews, API documentation, and CI/CD pipeline configuration.</div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-blue-400 font-bold">•</span>
+                        <div><strong>Communication & Triage:</strong> Email priority sorting, draft replies, calendar scheduling, meeting summaries, and customer service ticket management.</div>
+                    </li>
+                </ul>
+            </div>
 
-<footer class="wrap footer">
-<div>© 2026 Jazblue Automotive</div>
-<div><a href="https://github.com/Jazblue" target="_blank" rel="noopener">GitHub</a></div>
-</footer>
+            <div class="bg-cardBg/60 backdrop-blur-md p-8 rounded-3xl border border-borderCol space-y-6">
+                <div class="border-l-4 border-purple-500 pl-4">
+                    <h2 class="text-xl font-bold text-white">System Requirements & Limits</h2>
+                </div>
+                <div class="space-y-4 text-sm text-slate-300">
+                    <div class="p-4 rounded-2xl bg-slate-900/60 border border-borderCol space-y-2">
+                        <div class="flex justify-between font-semibold text-white">
+                            <span>Hardware Specs</span>
+                            <span class="text-blue-400">Baseline 2026</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Minimum: 24GB RAM, GTX 1660 equivalent. Recommended: 32GB+ RAM, RTX 3060+ GPU with high-speed SSD storage.</p>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/60 border border-borderCol space-y-2">
+                        <div class="flex justify-between font-semibold text-white">
+                            <span>Reliability & Risks</span>
+                            <span class="text-amber-400">15-20% Error Rate</span>
+                        </div>
+                        <p class="text-xs text-slate-400">Complex reasoning failures, tool integration variance, and potential privilege escalation risks through persistent background tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Tools & Integrations Summary</h2>
+                <p class="text-slate-400 text-sm">Comprehensive breakdown of leading 2026 local tools</p>
+            </div>
+            <div class="overflow-x-auto bg-cardBg/60 backdrop-blur-md rounded-3xl border border-borderCol shadow-xl">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="border-b border-borderCol text-slate-400 bg-slate-900/40">
+                            <th class="p-4 font-semibold">Category</th>
+                            <th class="p-4 font-semibold">Project</th>
+                            <th class="p-4 font-semibold">Description</th>
+                            <th class="p-4 font-semibold">Installation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-borderCol text-slate-300">
+                        <tr class="hover:bg-slate-900/20 transition-colors">
+                            <td class="p-4 font-medium text-white">Desktop Agent</td>
+                            <td class="p-4 text-blue-400 font-semibold">Hermes Agent</td>
+                            <td class="p-4">Skills system, persistent memory, multi-platform messaging</td>
+                            <td class="p-4 font-mono text-xs text-cyan-400">curl -fsSL hermes-agent.ai/install | bash</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/20 transition-colors">
+                            <td class="p-4 font-medium text-white">Desktop Agent</td>
+                            <td class="p-4 text-purple-400 font-semibold">OpenClaw Desktop</td>
+                            <td class="p-4">Execution container security, Windows automation</td>
+                            <td class="p-4 font-mono text-xs text-cyan-400">Download .exe installer</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/20 transition-colors">
+                            <td class="p-4 font-medium text-white">LLM Control</td>
+                            <td class="p-4 text-cyan-400 font-semibold">LLM-Manager</td>
+                            <td class="p-4">Unified panel for 50+ local models & hardware detection</td>
+                            <td class="p-4 font-mono text-xs text-cyan-400">pip install llm-manager</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/20 transition-colors">
+                            <td class="p-4 font-medium text-white">Skills Manager</td>
+                            <td class="p-4 text-blue-400 font-semibold">Agent Skills Manager</td>
+                            <td class="p-4">400+ pre-packaged skills with 100+ maintainers</td>
+                            <td class="p-4 font-mono text-xs text-cyan-400">Download Setup.exe</td>
+                        </tr>
+                        <tr class="hover:bg-slate-900/20 transition-colors">
+                            <td class="p-4 font-medium text-white">Specialized Skills</td>
+                            <td class="p-4 text-purple-400 font-semibold">Shokunin's 職人</td>
+                            <td class="p-4">Development and design skills with ChromaDB memory</td>
+                            <td class="p-4 font-mono text-xs text-cyan-400">pip install shokunin-skills</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="getting-started" class="space-y-6 pb-12">
+            <div class="border-l-4 border-cyan-500 pl-4">
+                <h2 class="text-2xl font-bold text-white">Getting Started & Quick Install</h2>
+                <p class="text-slate-400 text-sm">Clone the repository and spin up your local environment</p>
+            </div>
+            <div class="bg-cardBg/60 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-borderCol space-y-6 shadow-xl">
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Repository Setup</span>
+                    <div class="bg-slate-950 p-4 rounded-xl border border-borderCol font-mono text-xs text-slate-300 space-y-1">
+                        <p class="text-slate-500"># Clone repository</p>
+                        <p class="text-cyan-400">git clone https://github.com/Jazblue/windows-local-ai-agents-2026.git</p>
+                        <p class="text-slate-500"># Navigate to directory</p>
+                        <p class="text-cyan-400">cd windows-local-ai-agents-2026</p>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider">Quick Install Commands</span>
+                    <div class="bg-slate-950 p-4 rounded-xl border border-borderCol font-mono text-xs text-slate-300 space-y-3">
+                        <div>
+                            <span class="text-slate-500"># For Hermes Agent</span><br>
+                            <span class="text-emerald-400">curl -fsSL hermes-agent.ai/install | bash</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-500"># For LLM-Manager</span><br>
+                            <span class="text-emerald-400">pip install llm-manager && llm-manager --setup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-borderCol bg-cardBg/40 py-8 text-center text-slate-500 text-sm">
+        <p>Windows Local AI Agents 2026 Technical Report • Built with Tailwind CSS & Open Source Collaboration</p>
+    </footer>
+
 </body>
 </html>
