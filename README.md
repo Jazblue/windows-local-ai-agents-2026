@@ -266,28 +266,25 @@ gh auth login
 - **Projects**: Browse community contributions
 - **Contributing**: Learn how to contribute to this project
 
-## License
+## Live Website
 
-This repository is licensed under the MIT License - see the LICENSE file for details.
+View the complete **Windows Local AI Agents 2026 Technical Report** website live at:
 
-## Acknowledgements
+**[https://jazblue.github.io/windows-local-ai-agents-2026/](https://jazblue.github.io/windows-local-ai-agents-2026/)**
 
-Special thanks to:
-- All contributors who built and maintained the projects featured in this report
-- The open-source community for creating the foundational tools
-- Users who tested and provided feedback on these systems
+This website features the full technical report with:
 
-## Contribute
+- Executive summary and key findings
+- Complete ecosystem architecture diagrams
+- Detailed project descriptions and analysis
+- Tool & integrations comparison tables
+- Live demos and interactive examples
+- Direct navigation between sections
 
-We welcome contributions to this repository! Please see our CONTRIBUTING.md file for guidelines on how to get involved.
+The website is built with modern responsive design and optimized for both desktop and mobile viewing.
 
-## Recent Updates
+## Quick Access
 
-- [Add your recent updates here]
-
-## Project Statistics
-
-- **Stars**: [Update based on GitHub API]
-- **Forks**: [Update based on GitHub API]
-- **Contributors**: [Update based on GitHub API]
-- **Last Updated**: [Current Date]
+- **[GitHub Repository](https://github.com/Jazblue/windows-local-ai-agents-2026)** - Source code and documentation
+- **[Live Website](https://jazblue.github.io/windows-local-ai-agents-2026/)** - Interactive technical report
+- **[Issues](https://github.com/Jazblue/windows-local-ai-agents-2026/issues)** - Bug reports and feature requests
