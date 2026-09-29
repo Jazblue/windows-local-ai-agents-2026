@@ -4,7 +4,7 @@
 
 ## Cover Art
 
-![Windows Local AI Agents 2026 Cover](assets/cover-art.png)
+![Windows Local AI Agents 2026 Cover](assets/pic1localagents.jfif)
 
 ## Executive Summary
 
@@ -219,7 +219,7 @@ The local AI agent ecosystem on Windows has matured significantly in 2026, movin
 
 ## Architecture Diagram
 
-![Ecosystem Architecture](assets/architecture-diagram.png)
+![Architecture Diagram](assets/localagen2.jfif)
 
 ## Getting Started
 
